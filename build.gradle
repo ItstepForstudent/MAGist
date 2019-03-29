@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.4.7'
+}
+
+group 'ua.com.arturmamedov'
+version '1.0'
+
+sourceCompatibility = 1.8
+apply plugin: 'idea'
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compileOnly 'org.projectlombok:lombok:1.18.6'
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'
+}
+
+intellij {
+    version '2018.3.4'
+    plugins 'github'
+    pluginName 'MAGist'
+}
+patchPluginXml {
+    changeNotes """
+      Plugin for loading gists from github.<br>
+      """
+}

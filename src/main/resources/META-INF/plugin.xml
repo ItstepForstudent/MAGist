@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>ua.com.arturmamedov.MAGist</id>
+    <name>MAGist</name>
+    <version>1.0</version>
+    <vendor url="https://github.com/ItstepForstudent">Artur Mamedov</vendor>
+    <description><![CDATA[
+        <h1><b>MAGist Plugin</b></h1>
+        <br/>
+        <a href="https://github.com/ItstepForstudent/" target="_blank">GitHub</a>
+        <em> Plugin for loading gist from github </em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+    <idea-version since-build="182.1707"/>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>org.jetbrains.plugins.github</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="MAGist" anchor="bottom" icon="/icons/github.png"
+                    factoryClass="ua.com.arturmamedov.magist.ui.GistToolPanelFactory"/>
+        <applicationService serviceImplementation="ua.com.arturmamedov.magist.service.GistService"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
