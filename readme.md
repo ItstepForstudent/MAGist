@@ -6,6 +6,7 @@ For using this plugin you need to add your GitHub account to IDE settings.
 After it you may click button with user icon at plugin panel and change active account for plugin.
 
 ##Screenshot
+
 ![alt screenshot](screen.png)
 
 ##How to add GitHub account:
