@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'ua.com.arturmamedov'
-version '1.0'
+version '1.1'
 
 sourceCompatibility = 1.8
 apply plugin: 'idea'
@@ -22,12 +22,15 @@ dependencies {
 }
 
 intellij {
-    version '2018.3.4'
+    version '2019.1'
     plugins 'github'
     pluginName 'MAGist'
 }
 patchPluginXml {
     changeNotes """
       Plugin for loading gists from github.<br>
+      <em>Important:</em><br>
+      For normal work with plug-in,you need go to the IDE settings (File - Settings - Version Control - GitHub) 
+      and add an your GitHub account
       """
 }
