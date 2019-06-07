@@ -5,11 +5,11 @@ For using this plugin you need to add your GitHub account to IDE settings.
 
 After it you may click button with user icon at plugin panel and change active account for plugin.
 
-##Screenshot
+## Screenshot
 
 ![alt screenshot](screen.png)
 
-##How to add GitHub account:
+## How to add GitHub account:
 Go to IDE settings
 
 `Settings (or Preferences) -> Version Control -> GitHub`
